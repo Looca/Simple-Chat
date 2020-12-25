@@ -1,0 +1,84 @@
+.chat-messages-show-container{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+ }
+ .chat-messages-header{
+   background: #616161;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+}
+ .chat-messages-show-list {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+ }
+ .chat-messages-create-container{
+    background: #616161;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .chat-messages-create-input {
+    padding: 12px;
+    margin: 29px 30px;
+    flex:2
+ }
+ .chat-messages-create-button {
+    height: 50px;
+    margin: auto 40px;
+    width: 100px;
+ }
+
+ .message-list{
+     margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0px 5px 10px -4px rgba(110,110,110,1);
+    -moz-box-shadow: 0px 5px 10px -4px rgba(110,110,110,1);
+    box-shadow: 0px 5px 10px -4px rgba(110,110,110,1);
+ }
+
+ .message-list .user {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 10px;
+ }
+
+ .message-list.other{
+   border-radius: 0 5px 5px 5px;
+   position: relative;
+   background: aqua;
+   text-align: left;
+   max-width: 25%;
+   padding: 10px 15px;
+   margin-right: 75%;
+   /*float: left;*/
+   left: 10px;
+ }
+
+ .message-list.other .time{
+   display: block;
+   text-align: right;
+   font-size: 12px;
+ }
+
+ .message-list.me{
+   border-radius: 5px 0 5px 5px;
+   position: relative;
+   background: greenyellow;
+   text-align: right;
+   max-width: 25%;
+   padding: 10px 15px;
+   margin-left: 75%;
+   /*float: right;*/
+   right: 10px;
+}
+
+.message-list.me .time{
+   display: block;
+   text-align: left;
+   font-size: 12px;
+ }

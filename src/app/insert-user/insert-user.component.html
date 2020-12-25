@@ -1,0 +1,10 @@
+<div class="flex-container">
+    <div class="cell-12 insert-user">
+        <h1>Inserisci Username</h1>
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Inserisci una username" [(ngModel)]="username">
+        </mat-form-field>
+        <button button mat-raised-button (click)="insertUsername()">Entra</button>
+    </div>
+</div>
