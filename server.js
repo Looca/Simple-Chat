@@ -29,4 +29,7 @@ io.on('connection', (socket) => {
 });
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+// app.listen(process.env.PORT || 8080);
+http.listen(8080, () => {
+    console.log('listening on ' + process.env.PORT || 8080);
+});
