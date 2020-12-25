@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UtilsService } from '../services/utils.service';
 
-const SOCKET_ENDPOINT = 'localhost:3000';
+const SOCKET_ENDPOINT = 'https://simple-chat-luke.herokuapp.com:8080';
 import { io } from 'socket.io-client';
 
 @Component({
