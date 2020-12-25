@@ -6,13 +6,8 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/chat-example-frontend'));
-
-app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname+'/dist/chat-example-frontend/index.html'));
-});
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 io.on('connection', (socket) => {
     socket.on('username', (username) => {
